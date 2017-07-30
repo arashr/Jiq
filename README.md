@@ -1,8 +1,57 @@
+## Jiq (means "Scream" in Farsi)
+
+There was a need in error handling with more details and more flexability in Swift. I wrote my own Error wrapper so I could add more details to the errors.
+
+This wrapper is just makes my life easier! Hope does the same for you. 😬
+
+### Usage
+Initialize a Jiq object like this:
+```swift
+let error = Jiq()
+```
+
+Or like this:
+```swift
+let error = Jiq()
+```
+You can assign multiple details to the errors.
+There are error types like these:
+
+```swift
+error.type = .badResponse
+```
+
+Here are some Jiq types:
+```markdown
+  none
+  badRequest
+  badParameters
+  badResponse
+  notFound
+  unknown
+```
+
+You can assing messages to the error like this:
+```swift
+let error = Jiq()
+error.message = "Something bad happened."
+```
+
+You can append the real Error object to it:
+```swift
+error.error = Error()
+```
+There are "code" and "codeName" as other details that I found usefull over time.
+
+### Installation
+Simply drop the Jiq.swift file in your project or import this project to your workspace.
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Taskulu/Jiq/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
 
 ### Markdown
 
