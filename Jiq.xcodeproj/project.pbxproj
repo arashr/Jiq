@@ -10,6 +10,8 @@
 		5B3F96031F2DF73500E1A8C1 /* Jiq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3F95F91F2DF73500E1A8C1 /* Jiq.framework */; };
 		5B3F96081F2DF73500E1A8C1 /* JiqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3F96071F2DF73500E1A8C1 /* JiqTests.swift */; };
 		5B3F960A1F2DF73500E1A8C1 /* Jiq.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B3F95FC1F2DF73500E1A8C1 /* Jiq.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B3F96141F2DF9E500E1A8C1 /* Jiq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3F96131F2DF9E500E1A8C1 /* Jiq.swift */; };
+		5B3F96151F2DF9E500E1A8C1 /* Jiq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3F96131F2DF9E500E1A8C1 /* Jiq.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		5B3F96021F2DF73500E1A8C1 /* JiqTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiqTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3F96071F2DF73500E1A8C1 /* JiqTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiqTests.swift; sourceTree = "<group>"; };
 		5B3F96091F2DF73500E1A8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B3F96131F2DF9E500E1A8C1 /* Jiq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jiq.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 		5B3F95FB1F2DF73500E1A8C1 /* Jiq */ = {
 			isa = PBXGroup;
 			children = (
+				5B3F96131F2DF9E500E1A8C1 /* Jiq.swift */,
 				5B3F95FC1F2DF73500E1A8C1 /* Jiq.h */,
 				5B3F95FD1F2DF73500E1A8C1 /* Info.plist */,
 			);
@@ -149,6 +153,7 @@
 					5B3F95F81F2DF73500E1A8C1 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 2CV8GY3B58;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					5B3F96011F2DF73500E1A8C1 = {
@@ -198,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3F96141F2DF9E500E1A8C1 /* Jiq.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3F96151F2DF9E500E1A8C1 /* Jiq.swift in Sources */,
 				5B3F96081F2DF73500E1A8C1 /* JiqTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +331,7 @@
 		5B3F960E1F2DF73500E1A8C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2CV8GY3B58;
@@ -336,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.taskulu.Jiq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +352,7 @@
 		5B3F960F1F2DF73500E1A8C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2CV8GY3B58;
@@ -362,6 +372,7 @@
 		5B3F96111F2DF73500E1A8C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2CV8GY3B58;
 				INFOPLIST_FILE = JiqTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +385,7 @@
 		5B3F96121F2DF73500E1A8C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2CV8GY3B58;
 				INFOPLIST_FILE = JiqTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
