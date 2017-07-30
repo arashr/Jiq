@@ -7,30 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B3F96031F2DF73500E1A8C1 /* Jiq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3F95F91F2DF73500E1A8C1 /* Jiq.framework */; };
-		5B3F96081F2DF73500E1A8C1 /* JiqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3F96071F2DF73500E1A8C1 /* JiqTests.swift */; };
 		5B3F960A1F2DF73500E1A8C1 /* Jiq.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B3F95FC1F2DF73500E1A8C1 /* Jiq.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B3F96141F2DF9E500E1A8C1 /* Jiq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3F96131F2DF9E500E1A8C1 /* Jiq.swift */; };
-		5B3F96151F2DF9E500E1A8C1 /* Jiq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3F96131F2DF9E500E1A8C1 /* Jiq.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5B3F96041F2DF73500E1A8C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B3F95F01F2DF73500E1A8C1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B3F95F81F2DF73500E1A8C1;
-			remoteInfo = Jiq;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5B3F95F91F2DF73500E1A8C1 /* Jiq.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jiq.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3F95FC1F2DF73500E1A8C1 /* Jiq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jiq.h; sourceTree = "<group>"; };
 		5B3F95FD1F2DF73500E1A8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B3F96021F2DF73500E1A8C1 /* JiqTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiqTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B3F96071F2DF73500E1A8C1 /* JiqTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiqTests.swift; sourceTree = "<group>"; };
-		5B3F96091F2DF73500E1A8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B3F96131F2DF9E500E1A8C1 /* Jiq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jiq.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B3F95FF1F2DF73500E1A8C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B3F96031F2DF73500E1A8C1 /* Jiq.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				5B3F95FB1F2DF73500E1A8C1 /* Jiq */,
-				5B3F96061F2DF73500E1A8C1 /* JiqTests */,
 				5B3F95FA1F2DF73500E1A8C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				5B3F95F91F2DF73500E1A8C1 /* Jiq.framework */,
-				5B3F96021F2DF73500E1A8C1 /* JiqTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,15 +53,6 @@
 				5B3F95FD1F2DF73500E1A8C1 /* Info.plist */,
 			);
 			path = Jiq;
-			sourceTree = "<group>";
-		};
-		5B3F96061F2DF73500E1A8C1 /* JiqTests */ = {
-			isa = PBXGroup;
-			children = (
-				5B3F96071F2DF73500E1A8C1 /* JiqTests.swift */,
-				5B3F96091F2DF73500E1A8C1 /* Info.plist */,
-			);
-			path = JiqTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,24 +87,6 @@
 			productReference = 5B3F95F91F2DF73500E1A8C1 /* Jiq.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5B3F96011F2DF73500E1A8C1 /* JiqTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B3F96101F2DF73500E1A8C1 /* Build configuration list for PBXNativeTarget "JiqTests" */;
-			buildPhases = (
-				5B3F95FE1F2DF73500E1A8C1 /* Sources */,
-				5B3F95FF1F2DF73500E1A8C1 /* Frameworks */,
-				5B3F96001F2DF73500E1A8C1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B3F96051F2DF73500E1A8C1 /* PBXTargetDependency */,
-			);
-			name = JiqTests;
-			productName = JiqTests;
-			productReference = 5B3F96021F2DF73500E1A8C1 /* JiqTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -154,11 +101,6 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 2CV8GY3B58;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
-					};
-					5B3F96011F2DF73500E1A8C1 = {
-						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 2CV8GY3B58;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -176,20 +118,12 @@
 			projectRoot = "";
 			targets = (
 				5B3F95F81F2DF73500E1A8C1 /* Jiq */,
-				5B3F96011F2DF73500E1A8C1 /* JiqTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5B3F95F71F2DF73500E1A8C1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B3F96001F2DF73500E1A8C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,24 +141,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B3F95FE1F2DF73500E1A8C1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B3F96151F2DF9E500E1A8C1 /* Jiq.swift in Sources */,
-				5B3F96081F2DF73500E1A8C1 /* JiqTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5B3F96051F2DF73500E1A8C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B3F95F81F2DF73500E1A8C1 /* Jiq */;
-			targetProxy = 5B3F96041F2DF73500E1A8C1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5B3F960B1F2DF73500E1A8C1 /* Debug */ = {
@@ -269,7 +186,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -306,7 +223,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -317,7 +234,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -333,6 +250,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2CV8GY3B58;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -354,6 +272,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2CV8GY3B58;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -365,32 +284,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.taskulu.Jiq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		5B3F96111F2DF73500E1A8C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 2CV8GY3B58;
-				INFOPLIST_FILE = JiqTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.taskulu.JiqTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		5B3F96121F2DF73500E1A8C1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 2CV8GY3B58;
-				INFOPLIST_FILE = JiqTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.taskulu.JiqTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -414,14 +307,7 @@
 				5B3F960F1F2DF73500E1A8C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		5B3F96101F2DF73500E1A8C1 /* Build configuration list for PBXNativeTarget "JiqTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B3F96111F2DF73500E1A8C1 /* Debug */,
-				5B3F96121F2DF73500E1A8C1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

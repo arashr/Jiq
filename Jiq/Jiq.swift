@@ -18,15 +18,15 @@ public enum JiqType: Error {
 }
 
 public class Jiq: CustomStringConvertible {
-    var code: Int = 0
-    var codeName: String = ""
-    var type: JiqType = .none
-    var message: String = ""
-    var error: Error?
-    var component = ""
+    public var code: Int = 0
+    public var codeName: String = ""
+    public var type: JiqType = .none
+    public var message: String = ""
+    public var error: Error?
+    public var component = ""
 
-    var description: String {
-        return "🚨 JIQ:\n__________\nCode: \(code) - \(codeName)\nType:\(type)\nMessage:\(message)\nJSON:\(String(describing: jsonError))\nError\(String(describing: error))\nComponent:\(component)\n__________\n"
+    public var description: String {
+        return "🚨 JIQ:\n__________\nCode: \(code) - \(codeName)\nType:\(type)\nMessage:\(message)\nError\(String(describing: error))\nComponent:\(component)\n__________\n"
     }
 
     init() {
@@ -39,7 +39,7 @@ public class Jiq: CustomStringConvertible {
         self.codeName = codeName
         self.message = message
         self.type = type
-        self.error = NSError(domain: Config.errorDomain, code: self.code, userInfo: ["message":self.message])
+        self.error = NSError(domain: self.domainName(), code: self.code, userInfo: ["message":self.message])
     }
 
     // Compatibility init
@@ -62,6 +62,15 @@ public class Jiq: CustomStringConvertible {
         }else{
             output = "\(output): \(self)"
         }
-        log.error(output)
+        Swift.print(output)
+    }
+
+    private func domainName() -> String {
+        guard let info = Bundle.main.infoDictionary,
+            let identifier = info["CFBundleIdentifier"] as? String else {
+
+                return "com.Jiq"
+        }
+        return identifier
     }
 }
