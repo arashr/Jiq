@@ -33,7 +33,7 @@ public class Jiq: CustomStringConvertible {
 
     }
 
-    convenience public init(code:Int = 0, codeName:String = "", type: JiqType = .unknown, message:String = "") {
+    convenience public init(code:Int = 0, codeName:String = "", type: JiqType = .none, message:String = "") {
         self.init()
         self.code = code
         self.codeName = codeName
