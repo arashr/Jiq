@@ -73,4 +73,16 @@ public class Jiq: CustomStringConvertible {
         }
         return identifier
     }
+
+    /**
+     To extend and store error messages.
+     */
+    public class Message {
+
+    }
+}
+
+extension Jiq.Message {
+    public static let badResponse = "Bad response.".localized
+    public static let noJSON = "No valid JSON.".localized
 }

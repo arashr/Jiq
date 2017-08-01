@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B3F960A1F2DF73500E1A8C1 /* Jiq.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B3F95FC1F2DF73500E1A8C1 /* Jiq.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B3F96141F2DF9E500E1A8C1 /* Jiq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3F96131F2DF9E500E1A8C1 /* Jiq.swift */; };
+		5BAB1A7C1F305BBC00314BAD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB1A7B1F305BBC00314BAD /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		5B3F95FC1F2DF73500E1A8C1 /* Jiq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jiq.h; sourceTree = "<group>"; };
 		5B3F95FD1F2DF73500E1A8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B3F96131F2DF9E500E1A8C1 /* Jiq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jiq.swift; sourceTree = "<group>"; };
+		5BAB1A7B1F305BBC00314BAD /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 				5B3F96131F2DF9E500E1A8C1 /* Jiq.swift */,
 				5B3F95FC1F2DF73500E1A8C1 /* Jiq.h */,
 				5B3F95FD1F2DF73500E1A8C1 /* Info.plist */,
+				5BAB1A7B1F305BBC00314BAD /* Helpers.swift */,
 			);
 			path = Jiq;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B3F96141F2DF9E500E1A8C1 /* Jiq.swift in Sources */,
+				5BAB1A7C1F305BBC00314BAD /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
