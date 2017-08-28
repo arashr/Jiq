@@ -10,6 +10,7 @@ import Foundation
 
 public enum JiqType: Error {
     case none
+    case badGateway
     case badRequest
     case badParameters
     case badResponse
